@@ -1,0 +1,274 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: #FDEDF4;  
+  text-align: center;
+} 
+h1{ 
+font-size: 40px;
+  color: #2F6491;
+}
+h2{
+  font size: 32px;
+  color: #2F6491;
+  text-align: center;
+}
+
+h3{
+  font size: 32px;
+  color: white;
+  text-align: center;
+}
+
+h4{
+  font size: 15px;
+  color: #2F6491;
+  text-align: center;
+  font-weight: 300;
+}
+
+h5{
+  font size: 28px;
+  color: #2F6491;
+  text-align: left;
+}
+
+h6{
+  font size: 12px;
+  color: #2F6491;
+  text-align: left;
+  font-weight: 300;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color:#A2A2A2;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Bottom center decor */
+.bottom-center {
+  position:absolute;
+  width:300px;
+  height:300px;
+  bottom:0px;
+  right:25%;
+}
+
+/* LOGO Styles */
+<style>
+    #content {
+        position: fixed;
+    }
+    #content img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+</style>
+
+<div id="content">
+    <img src="images/logo.gif" class="ribbon"/>
+</div>
+
+
+
+
+/* Header Styles */
+.heroImage {
+	background: linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.3));
+  height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+
+.heroContents {
+	padding-top: 25px;
+	text-align: center;
+  text-justify: center;
+	color: rgba(255, 255, 255, 0.418);
+}
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #FDEDF4;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #A2A2A2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: #E975B4;
+  font-weight: 700;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #FDEDF4;
+  color: #2F6491;
+  font-weight: 700;
+}
+
+/* Arrow Styles */
+.gridChild {
+  margin: 15px;
+  padding: 15px;
+  height: 50px;
+  float: center;
+}
+.arrow {
+  grid-area: arrow;
+  float: center;
+
+}
+.bounceMe {
+  animation: bounceArrow 2s infinite;
+  float: center;
+}
+.bounceCircle {
+  animation: bounceArrow 5s infinite;
+  float: center;
+}
+
+@keyframes bounceArrow {
+  from {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 30px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+/* Mobile Query */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Grid Styles */
+html, body 
+            {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                min-height: 100%;
+            }
+
+            .row
+            {
+                Width: 100%;
+                Height: 50%;
+             }
+
+            .border
+            {
+                border-bottom: 1px solid black;
+            }
+
+
+
+/* Card Style*/
+
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Float four columns side by side */
+            .column {
+              float: left;
+              width: 33%;
+              padding: 0 10px;
+            }
+            
+            /* Remove extra left and right margins, due to padding in columns */
+            .row {margin: 0 -5px;}
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Style the counter cards */
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+              padding: 16px;
+              text-align: center;
+              background-color: #f1f1f1;
+            }
+            
+            /* Responsive columns - one column layout (vertical) on small screens */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+              }
+            }
+/* Button Styles */
+.bookButton {
+  background-color: #2F6491;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.bookButton:hover {
+  background-color: #E975B4;
+}
+.row {
+  display: flex;
+  margin: 10;
+  padding: 10;
+}
+
+.column {
+  flex: 30%;
+  margin: 10;
+  padding: 10;
+}
+.row-border{
+  background-color: #f1f1f1;
+}
+
+.container-footer{
+  margin-top: 200;
+}
